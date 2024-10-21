@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: auto;
     padding: 0;
     box-sizing: border-box;
 }
@@ -7,7 +7,7 @@
     width: 420px;
     background-color: white;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 3px solid black;
 }
 
 .profile-items-div {
@@ -52,9 +52,11 @@
     list-style: none;
     color: black;
     display: flex;
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     justify-content: space-between;
+    border-radius: 0 0 10px 10px;
+    border-top: 3px solid grey;
 }
 
 .profile-stats-items {
@@ -63,13 +65,15 @@
     align-items: center;
     text-align: center;
     flex: 1;
+    padding-top: 15px;
 }
-/* 
-.profile-stats-items-span {
-    display: block;
-    justify-content: center;
-} */
+
+.profile-stats-items:not(:first-child) {
+    border-left: 3px solid grey;
+}
 
 .profile-stats-items-span-value {
     font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
